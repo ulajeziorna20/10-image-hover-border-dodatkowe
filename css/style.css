@@ -1,0 +1,47 @@
+
+
+div.image {
+    text-align: center;
+    margin-top: 150px;
+    
+
+}
+
+,img {
+    position: relative;
+}
+
+
+.img::before {
+    content: '';
+    display: block;
+    border-bottom: 4px solid blue;
+    /* border-left: 4px solid blue;
+    border-right: 4px solid blue; */
+    /* left: 50%; */
+    width: 0%;
+    bottom: -8px;
+    transition: all .5s;
+    position: absolute;
+}
+
+/* .btn::before {
+	content: '';
+	border-bottom: 4px solid blue;
+	width: 0%;
+	position: absolute;
+	left: 0;
+	bottom: -8px;
+	transition: all .5s;
+}
+ */
+
+.img:hover::before {
+    /* border-left-width: 50%;
+    border-right-width: 50%; */
+    width: 100%;
+}
+
+/* .btn:hover::before {
+	width: 100%;
+} */
